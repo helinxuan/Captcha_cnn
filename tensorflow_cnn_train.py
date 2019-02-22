@@ -1,6 +1,7 @@
 # coding:utf-8
-from captcha_image_deal import gen_captcha_text_and_image, convert2gray
-from captcha_image_genera import number, ALPHABET
+from captcha_image_deal import convert2gray
+from captcha_image_genera import number, ALPHABET, gen_captcha_text_and_image
+
 import numpy as np
 import tensorflow as tf
 

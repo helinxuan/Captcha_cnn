@@ -14,24 +14,6 @@ def convert2gray(img):
     else:
         return img
 
-
-# 生成字符对应的验证码
-def gen_captcha_text_and_image():
-    captcha_text = 'TQH2'
-
-    # captcha = image.generate(captcha_text)
-    # image.write(captcha_text, captcha_text + '.jpg')  # 写到文件
-
-    # rm  =  'rm '+captcha_text + '.jpg'
-    # print rm
-    # os.system(rm)
-    # time.sleep(10)
-
-    captcha_image = Image.open('image/UserRecordAction_generateCode.jpg')
-    captcha_image = np.array(captcha_image)
-    return captcha_text, captcha_image
-
-
 # 测试
 if __name__ == '__main__':
     image = Image.open('image/UserRecordAction_generateCode.jpg')

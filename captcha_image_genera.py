@@ -1,9 +1,11 @@
 # coding:utf-8
 from captcha.image import ImageCaptcha  # pip install captcha
 import numpy as np
-import matplotlib.pyplot as plt
+import matplotlib as plt
 from PIL import Image
-import random, time, os
+import random, time
+
+plt.use('TkAgg')
 
 # 验证码中的字符, 就不用汉字了
 number = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
@@ -24,18 +26,16 @@ def random_captcha_text(char_set=number + ALPHABET, captcha_size=4):
 
 # 生成字符对应的验证码
 def gen_captcha_text_and_image():
-    image = ImageCaptcha(fonts=['Consolas/consola-1.ttf'])
+    # 读取图片文件
+    # image = ImageCaptcha(fonts=['Consolas/consola-1.ttf'])
+    # captcha_text = random_captcha_text()
+    # captcha_text = ''.join(captcha_text)
+    # captcha = image.generate(captcha_text)
 
+    image = ImageCaptcha()
     captcha_text = random_captcha_text()
     captcha_text = ''.join(captcha_text)
-
     captcha = image.generate(captcha_text)
-    # image.write(captcha_text, captcha_text + '.jpg')  # 写到文件
-
-    # rm  =  'rm '+captcha_text + '.jpg'
-    # print rm
-    # os.system(rm)
-    # time.sleep(10)
 
     captcha_image = Image.open(captcha)
     captcha_image = np.array(captcha_image)

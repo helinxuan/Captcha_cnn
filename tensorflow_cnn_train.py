@@ -86,15 +86,16 @@ def get_next_batch(batch_size=128):
     batch_y = np.zeros([batch_size, MAX_CAPTCHA * CHAR_SET_LEN])
 
     # 有时生成图像大小不是(60, 160, 3)
-    def wrap_gen_captcha_text_and_image():
+    def wrap_gen_captcha_text_and_image(i):
         ''' 获取一张图，判断其是否符合（60，160，3）的规格'''
         while True:
-            text, image = gen_captcha_text_and_image(1)
+            text, image = gen_captcha_text_and_image(i)
+            i = i + 1
             if image.shape == (60, 160, 3):  # 此部分应该与开头部分图片宽高吻合
                 return text, image
 
     for i in range(batch_size):
-        text, image = wrap_gen_captcha_text_and_image()
+        text, image = wrap_gen_captcha_text_and_image(i)
         image = convert2gray(image)
 
         # 将图片数组一维化 同时将文本也对应在两个二维组的同一行

@@ -1,23 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0dcc8c0d-572c-45a3-b182-263c5f69cb6f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0dcc8c0d-572c-45a3-b182-263c5f69cb6f" name="Default Changelist" comment="图像预处理">
       <change beforePath="$PROJECT_DIR$/captcha_image_deal.py" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_image_deal.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/captcha_image_genera.py" beforeDir="false" afterPath="$PROJECT_DIR$/captcha_image_genera.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (1).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (10).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (3).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (4).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (5).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (6).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (7).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (8).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode (9).jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/UserRecordAction_generateCode.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/image/code.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/tensorflow_cnn_train.py" beforeDir="false" afterPath="$PROJECT_DIR$/tensorflow_cnn_train.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ttf/consola-1.ttf" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,20 +17,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/tensorflow_cnn_train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            <state relative-caret-position="120">
+              <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+              <folding>
+                <element signature="e#15#58#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/captcha_image_deal.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="334">
-              <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+            <state relative-caret-position="158">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#15#36#0" expanded="true" />
               </folding>
@@ -54,10 +44,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/captcha_image_genera.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="203">
+              <caret line="27" column="34" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="34" />
               <folding>
-                <element signature="e#15#76#0" expanded="true" />
+                <element signature="e#15#33#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -71,14 +61,19 @@
     </findStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="何林轩 &lt;helinxuan@helinxuandemacbook-pro.local&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/tensorflow_cnn_train.py" />
         <option value="$PROJECT_DIR$/captcha_image_genera.py" />
         <option value="$PROJECT_DIR$/captcha_image_deal.py" />
+        <option value="$PROJECT_DIR$/tensorflow_cnn_train.py" />
       </list>
     </option>
   </component>
@@ -126,7 +121,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.captcha_image_deal">
+  <component name="RunManager" selected="Python.tensorflow_cnn_train">
     <configuration name="captcha_image_deal" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="Captcha_cnn" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -192,9 +187,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.captcha_image_deal" />
         <item itemvalue="Python.tensorflow_cnn_train" />
         <item itemvalue="Python.captcha_image_genera" />
+        <item itemvalue="Python.captcha_image_deal" />
       </list>
     </recent_temporary>
   </component>
@@ -209,11 +204,18 @@
       <option name="presentableId" value="Default" />
       <updated>1550802054387</updated>
     </task>
+    <task id="LOCAL-00001" summary="图像预处理">
+      <created>1550915214461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1550915214461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="877" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49933067" visible="true" weight="0.24312897" />
       <window_info id="Structure" order="1" sideWeight="0.50066936" side_tool="true" weight="0.24981897" />
@@ -221,11 +223,11 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49964765" weight="0.32866243" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49964765" visible="true" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49964765" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32931727" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49964765" weight="0.32866243" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5003524" side_tool="true" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="10" />
@@ -255,30 +257,41 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout-to-restore>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="图像预处理" />
+    <option name="LAST_COMMIT_MESSAGE" value="图像预处理" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/captcha_image_genera.py</url>
-          <line>84</line>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tensorflow_cnn_train.py</url>
-          <line>183</line>
+          <line>184</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tensorflow_cnn_train.py</url>
-          <line>180</line>
+          <line>181</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/captcha_image_deal.py</url>
-          <line>42</line>
-          <option name="timeStamp" value="22" />
+          <url>file://$PROJECT_DIR$/tensorflow_cnn_train.py</url>
+          <line>178</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tensorflow_cnn_train.py</url>
+          <line>97</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -319,13 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/PIL/Image.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="1528" selection-start-line="1528" selection-end-line="1528" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/image/8P9Q.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
@@ -338,29 +344,39 @@
     <entry file="file://$PROJECT_DIR$/image/52.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/tensorflow_cnn_train.py">
+    <entry file="file://$USER_HOME$/anaconda3/lib/python3.7/site-packages/PIL/Image.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/captcha_image_genera.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="29" selection-start-line="29" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="e#15#76#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="141">
+          <caret line="2608" selection-start-line="2608" selection-end-line="2608" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/captcha_image_deal.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="334">
-          <caret line="171" column="31" selection-start-line="171" selection-start-column="31" selection-end-line="171" selection-end-column="31" />
+        <state relative-caret-position="158">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#15#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/captcha_image_genera.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="27" column="34" selection-start-line="27" selection-start-column="33" selection-end-line="27" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tensorflow_cnn_train.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="96" column="31" selection-start-line="96" selection-start-column="31" selection-end-line="96" selection-end-column="31" />
+          <folding>
+            <element signature="e#15#58#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,9 +1,9 @@
 # coding:utf-8
-from captcha.image import ImageCaptcha  # pip install captcha
 import numpy as np
 import matplotlib as plt
 from PIL import Image
 import random, requests, base64, os
+from captcha_image_deal import convert2gray, interference_point, interference_line, get_img_file
 
 plt.use('TkAgg')
 
@@ -30,6 +30,10 @@ def gen_captcha_text_and_image(i):
     imgFile, imgName = get_img_file()
     captcha_image = Image.open(imgFile[i])
     captcha_image = np.array(captcha_image)
+
+    captcha_image = convert2gray(captcha_image)  # 生成一张新图
+    captcha_image = interference_line(captcha_image)
+    captcha_image = interference_point(captcha_image)
 
     captcha_text = imgName[i]
 
@@ -65,19 +69,6 @@ def get_image_text():
 
         r = requests.post('http://op.juhe.cn/vercode/index', data=data)
         print('r:' + r.text)
-
-
-def get_img_file():
-    path = "image"  # 文件夹目录
-    files = os.listdir(path)  # 得到文件夹下的所有文件名称
-    imgFile = []
-    imgName = []
-    for file in files:  # 遍历文件夹
-        if not os.path.isdir(file):  # 判断是否是文件夹，不是文件夹才打开
-            imgFile.append(path + "/" + file)
-            imgName.append(file)
-
-    return imgFile, imgName
 
 
 if __name__ == '__main__':

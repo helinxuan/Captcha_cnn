@@ -1,10 +1,21 @@
 # coding:utf-8
 from PIL import Image
-import numpy as np
-from captcha_image_genera import get_img_file
+import numpy as np, os, glob
 
 
-# import cv2 as cv2
+def get_img_file():
+    path = "image"  # 文件夹目录
+    files = os.listdir(path)  # 得到文件夹下的所有文件名称
+    imgFile = []
+    imgName = []
+    for file in files:  # 遍历文件夹
+        if not os.path.isdir(file) and file.endswith('png'):  # 判断是否是文件夹，不是文件夹才打开
+            imgFile.append(path+'/'+file)
+            (filepath, tempfilename) = os.path.split(file)
+            (filename, extension) = os.path.splitext(tempfilename)
+            imgName.append(filename)
+
+    return imgFile, imgName
 
 
 # 把彩色图像转为灰度图像（色彩对识别验证码没有什么用）
@@ -17,25 +28,6 @@ def convert2gray(img):
         return gray
     else:
         return img
-
-
-def depoint(img):  # input: gray image
-    pixdata = img.load()
-    w, h = img.size
-    for y in range(1, h - 1):
-        for x in range(1, w - 1):
-            count = 0
-            if pixdata[x, y - 1] > 245:
-                count = count + 1
-            if pixdata[x, y + 1] > 245:
-                count = count + 1
-            if pixdata[x - 1, y] > 245:
-                count = count + 1
-            if pixdata[x + 1, y] > 245:
-                count = count + 1
-            if count > 2:
-                pixdata[x, y] = 255
-    return img
 
 
 # 干扰线降噪
@@ -56,7 +48,6 @@ def interference_line(img):
                 count = count + 1
             if count > 2:
                 img[x, y] = 255
-    # cv2.imwrite(filename, img)
     return img
 
 
@@ -154,7 +145,6 @@ def interference_point(img, x=0, y=0):
                           + int(img[x + 1, y + 1])
                     if sum <= 4 * 245:
                         img[x, y] = 0
-    # cv2.imwrite(filename, img)
     return img
 
 
